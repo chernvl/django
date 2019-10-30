@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="'container">
+            <h1>Hello World!</h1>
+                {% block content %}
+                {% endblock %}
+            <p>
+                <a href="/" class="btn btn-success btn-lg"> Main page &map; </a>
+                <a href="/news" class="btn btn-primary btn-lg"> News &raquo;</a>
+                <a href="/contacts" class="btn btn-info btn-lg"> Contants </a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="{% static 'mainApp/image/books.jpg' %}" class="img-thumbnail">
+        <hr>
+        &copy; All rights reserved 2019
+    </div>
+
+</body>
+</html>
