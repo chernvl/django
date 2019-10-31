@@ -5,7 +5,7 @@ def index(request):
     return render(request, 'mainApp/homePage.html')
 
 def news(request):
-    return render(request, 'mainApp/basic.html', {'values': ['News are coming!'}) 
+    return render(request, 'mainApp/basic.html', {'values': ['News are coming!']}) 
 
 def contacts(request):
     return render(request, 'mainApp/basic.html', {'values': ['E-mail:', 'test@test.test']})
