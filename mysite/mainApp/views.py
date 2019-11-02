@@ -4,8 +4,10 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'mainApp/homePage.html')
 
-def news(request):
-    return render(request, 'mainApp/basic.html', {'values': ['News are coming!']}) 
-
 def contacts(request):
-    return render(request, 'mainApp/basic.html', {'values': ['E-mail:', 'test@test.test']})
+    return  render(request, 'mainApp/basic.html', {'values': ['E-mail:', 'test@test.test']})
+
+def upload (request):
+    if request.method == 'POST':
+        uplaoded_file = request.FILED ('document')
+    return render(request,'mainApp/upload.html')
