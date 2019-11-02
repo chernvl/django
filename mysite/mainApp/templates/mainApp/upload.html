@@ -1,17 +1,12 @@
-{% if messages %}
-    {% for message in messages %}
-        <div>
-            <strong>{{message|safe}}</strong>
-        </div>>
-    {% endfor %}
+{% extends "mainApp/basic.html" %}
 
-{% else %}
-{{order}}
+{% block content %}
+
+<h2>Upload</h2>
 <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <label>Upload a file</label>
-    <input type ="file" name ="file">
-    <p>Only csv files</p>
-    <button type = "submit">Upload</button>
+    {%csrf_token%}
+    <input type="file" name="document">
+    <button type="submit">Upload file</button>
 </form>
-{% endif %}
+
+{% endblock %}
