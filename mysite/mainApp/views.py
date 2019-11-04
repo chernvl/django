@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
 def index(request):
@@ -9,5 +10,7 @@ def contacts(request):
 
 def upload (request):
     if request.method == 'POST':
-        uplaoded_file = request.FILED ('document')
+        uplaoded_file = request.FILES ['document']
+        fs = FileSystemStorage()
+        fs.save(uplaoded_file.name,uplaoded_file)
     return render(request,'mainApp/upload.html')
