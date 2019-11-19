@@ -8,3 +8,5 @@ mysite/.idea/mysite.iml
 mysite/.idea/workspace.xml
 mysite/.idea/vcs.xml
 mysite/.idea/inspectionProfiles/Project_Default.xml
+*.pyc
+*.pyc
