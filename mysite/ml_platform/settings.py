@@ -26,8 +26,10 @@ SECRET_KEY = 'o1+p&5j1!jrcnf=eh3d68&^b308+&&vcimyi2hmqlgzkf1g909'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    '',
+    '.starter.openshift-online.com'
+]
 
 # Application definition
 
