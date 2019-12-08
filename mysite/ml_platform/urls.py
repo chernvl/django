@@ -24,9 +24,10 @@ urlpatterns = [
 
     url(r'^$',views.index,name='index'),
     url(r'^admin/',admin.site.urls),
-    url (r'^formpage/',views.form_name,name='form_name')
+    url (r'^formpage/',views.form_name,name='form_name'),
+    url (r'^models/models_list/',views.models_data,name='models_data'),
+    url (r'^models/model_upload/',views.models_data_upload,name='model_upload'),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-
