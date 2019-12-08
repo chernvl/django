@@ -17,7 +17,7 @@
         <tr>
             <td>{{ model.name }}</td>
             <td>{{model.author}}</td>
-            <td>{{model.csv}}</td>
+            <td><a href="{{model.csv.url}}">Download</a> </td>
         </tr>
         {% endfor%}
         </tbody>
