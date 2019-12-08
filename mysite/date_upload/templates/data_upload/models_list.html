@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Models list</title>
+    <h2>Models list</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Download</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for model in models %}
+        <tr>
+            <td>{{ model.name }}</td>
+            <td>{{model.author}}</td>
+            <td>{{model.csv}}</td>
+        </tr>
+        {% endfor%}
+        </tbody>
+    </table>
+</head>
+<body>
+
+</body>
+</html>
