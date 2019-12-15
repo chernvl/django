@@ -27,7 +27,7 @@ SECRET_KEY = 'o1+p&5j1!jrcnf=eh3d68&^b308+&&vcimyi2hmqlgzkf1g909'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '',
+    '127.0.0.1',
     '.starter.openshift-online.com'
 ]
 
