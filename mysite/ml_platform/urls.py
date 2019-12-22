@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from date_upload import views
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.conf import settings
 from  django.conf.urls.static import static
 
@@ -24,6 +24,7 @@ urlpatterns = [
 
     url(r'^$',views.index,name='index'),
     url(r'^admin/',admin.site.urls),
+    url(r'^date_upload/',include('date_upload.urls')),
     url (r'^formpage/',views.form_name,name='form_name'),
     url (r'^models/models_list/',views.models_data,name='models_data'),
     url (r'^models/model_upload/',views.models_data_upload,name='model_upload'),

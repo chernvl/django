@@ -88,6 +88,10 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
+PASSWORD_HASHER = [
+    'django.contrib.auth.hashers.pbkdf2passwordhasher'
+]
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
