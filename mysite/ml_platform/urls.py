@@ -28,6 +28,8 @@ urlpatterns = [
     url (r'^formpage/',views.form_name,name='form_name'),
     url (r'^models/models_list/',views.models_data,name='models_data'),
     url (r'^models/model_upload/',views.models_data_upload,name='model_upload'),
+    url (r'logout/$',views.user_logout,name='logout'),
+    url (r'special/',views.special,name='special'),
 ]
 
 if settings.DEBUG:
